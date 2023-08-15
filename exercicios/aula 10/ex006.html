@@ -18,32 +18,38 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmousemove="mover()" onmousedown="segurar()" onmouseout="sair()">
+    <div id="area">
         Interaja...
 
     </div>
     <script>
+        var ar = document.getElementById('area')
+        ar.addEventListener('click',clicar)
+        ar.addEventListener('mouseenter',entrar)
+        ar.addEventListener('mousedown',segurar)
+        ar.addEventListener('mouseout',sair)
+
         function clicar(){
-            var ar = document.getElementById('area')
+            
             ar.innerText= 'Clicou mané'
             ar.style.backgroundColor= 'red'
         }
         function entrar(){
-            var en = document.getElementById('area')
-            en.innerText= ' Entrou mané'
-            en.style.backgroundColor= 'blue'
+            
+            ar.innerText= ' Entrou mané'
+            ar.style.backgroundColor= 'blue'
         }
         
         function segurar(){
-            var se = document.getElementById ('area')
-            se.innerText= 'Me segura'
-            se.style.backgroundColor= 'yellow'
-            se.style.color= 'black'
+            
+            ar.innerText= 'Me segura'
+            ar.style.backgroundColor= 'yellow'
+            ar.style.color= 'black'
         }
         function sair(){
-            var sa = document.getElementById('area')
-            sa.innerText = 'Sai não'
-            sa.style.backgroundColor= 'green'
+            
+            ar.innerText = 'Sai não'
+            ar.style.backgroundColor= 'green'
         }
 
         
