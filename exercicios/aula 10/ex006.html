@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: green;
+            font: normal 18pt arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmousemove="mover()" onmousedown="segurar()" onmouseout="sair()">
+        Interaja...
+
+    </div>
+    <script>
+        function clicar(){
+            var ar = document.getElementById('area')
+            ar.innerText= 'Clicou mané'
+            ar.style.backgroundColor= 'red'
+        }
+        function entrar(){
+            var en = document.getElementById('area')
+            en.innerText= ' Entrou mané'
+            en.style.backgroundColor= 'blue'
+        }
+        
+        function segurar(){
+            var se = document.getElementById ('area')
+            se.innerText= 'Me segura'
+            se.style.backgroundColor= 'yellow'
+            se.style.color= 'black'
+        }
+        function sair(){
+            var sa = document.getElementById('area')
+            sa.innerText = 'Sai não'
+            sa.style.backgroundColor= 'green'
+        }
+
+        
+    </script>
+</body>
+</html>
