@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    Digite por favor o seu pais de origem:
+     <input type="text" id="txtvel">
+    <input type="button" value="Consultar" onclick="calcular()">
+    <div id="res"></div>
+
+
+    <script>
+       function calcular(){
+        var txtp = document.getElementById('txtvel')
+        var res = document.getElementById('res')
+        var pais = (txtp.value)
+        res.innerHTML = `<p> Sua nacionalidade é ${pais}</p>`
+        if( pais == 'Brasil'){
+            res.innerHTML = `<p> Sua nacionalidade é Brasileira</p>`
+        }
+        else{
+            res.innerHTML = `<p> Sua nacionalidade é Estrangeira</p>`
+        }
+        
+        }
+    </script>
+</body>
+</html>
