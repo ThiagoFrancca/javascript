@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+</head>
+<body>
+    <h1>Que horas são</h1>
+    Responda pra mim que horas são: <input name="" id="horas">
+    <input type="button" value="OK" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+       function calcular(){
+        var hora = document.getElementById('horas')
+        var res = document.getElementById('res')
+        var hr = Number(hora.value)
+        res.innerHTML = `<p> Agora são exatamente ${hr} horas.</p>`
+
+if( hr < 12){
+     res.innerHTML +=('Bom dia')
+}else if(hr <=18){
+     res.innerHTML +=('Boa tarde')
+}else if( hr <= 24){
+     res.innerHTML +=('Boa noite')
+} else if(hr < 6){
+     res.innerHTML +=('Boa madrugada')
+
+}
+}
+    </script>
+</body>
+</html>
