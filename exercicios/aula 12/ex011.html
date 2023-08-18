@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Idade de votação</h1>
+    Digite sua idade na lacula ao lado, por favor: <input type="number" name="txtp" id="txtvel">
+    <input type="button" value="Consultar" onclick="consultar()">
+    <div id="res"></div>
+
+    <script>
+        function consultar(){
+        var txtp = document.getElementById('txtvel')
+        var res = document.getElementById('res')
+        var voto = Number
+        var vel = Number(txtp.value)
+        res.innerHTML = `<p> Sua idade é de ${vel} anos.</p>`
+        
+        if (vel <16){
+            res.innerHTML += ('Não pode votar!')
+        }else if (vel < 18){
+            res.innerHTML +=('Voto facultativo')
+        }else if(vel < 65){
+            res.innerHTML +=(' Voto Obrigatório')
+        }
+        else{
+            res.innerHTML +=('Voto facultativo')
+        }
+  
+    }
+    </script>
+</body>
+</html>
