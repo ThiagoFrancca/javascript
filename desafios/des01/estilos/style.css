@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(70,142,236);
+    background-color: rgb(109, 170, 240);
     font: normal 14pt Arial;
 }
-header{
+header h1{
 color: white;
 text-align: center;
 }
@@ -18,4 +18,8 @@ section{
 footer{
     color: white;
     text-align: center;
+}
+div{
+    text-align: center;
+    padding: 7px;
 }
