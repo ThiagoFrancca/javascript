@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário</title>
+    <title>Verificador de imagem</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de imagem</h1>
     </header>
     <main>
         <section>
             <div>
-                Testando...
+                <p>Ano de nascimento:
+                    <input type="number" name="txtano" id="txtano" >
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                    
+                </p>
             </div>
-            <div>
-                Olá...
+            <div id="res">
+                    Preencha as lacunas acima para ver o resultado.
             </div>
         </section>
     </main>
     <footer>
 <p>&copy; Curso em video</p>
     </footer>
-    <script src="ex012.js"></script>
+    <script src="idade.js"></script>
 </body>
 </html>
