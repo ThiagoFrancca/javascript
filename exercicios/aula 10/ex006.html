@@ -6,13 +6,13 @@
     <title>Eventos DOM</title>
     <style>
         div#area{
-            background-color: green;
-            font: normal 18pt arial;
+            background-color: rgb(11, 184, 11);
+            font: normal 24pt arial;
             color: white;
-            width: 200px;
-            height: 200px;
+            width: 450px;
+            height: 450px;
             text-align: center;
-            line-height: 200px;
+            line-height: 450px;
         }
 
     </style>
@@ -31,25 +31,29 @@
 
         function clicar(){
             
-            ar.innerText= 'Clicou mané'
+            ar.innerText= 'Clicou mané!'
             ar.style.backgroundColor= 'red'
+            ar.style.cursor= 'pointer'
         }
         function entrar(){
             
-            ar.innerText= ' Entrou mané'
+            ar.innerText= ' Entrou mané!'
             ar.style.backgroundColor= 'blue'
+            ar.style.cursor= 'pointer'
         }
         
         function segurar(){
             
-            ar.innerText= 'Me segura'
+            ar.innerText= 'Me segura!'
             ar.style.backgroundColor= 'yellow'
             ar.style.color= 'black'
+            ar.style.cursor= 'pointer'
         }
         function sair(){
             
             ar.innerText = 'Sai não'
             ar.style.backgroundColor= 'green'
+            ar.style.cursor= 'pointer'
         }
 
         

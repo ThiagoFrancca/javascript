@@ -15,21 +15,27 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p id="msg">Aprendendo js</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo js</p>
+    
+    <div class="msg">Clique em mim</div>
 
 
 
     <script>
-        var p1= document.getElementsByTagName ('p')[0]
-       /* window.document.write( 'Está escrito assim: ' + p1.innerText)
+        var p1= document.getElementsByTagName ('p')[1]
+        window.document.write( 'Está escrito assim: ' + p1.innerText)
+       
         var corpo= document.body
-       /* corpo.style.backgroundColor= 'black'*/
+        /*corpo.style.backgroundColor= 'red'
 
        var d= window.document.getElementById('msg')
        d.style.color= 'red'
 
-       d.innerText ="ESTOU APRENDENDO"
+       d.innerText ="ESTOU APRENDENDO"*/
+
+       var d= window.document.querySelector('div.msg')
+       d.style.backgroundColor= 'red'
+
     </script>
 </body>
 </html>
