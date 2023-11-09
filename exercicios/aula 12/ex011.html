@@ -21,14 +21,12 @@
         
         if (vel <16){
             res.innerHTML += ('Não pode votar!')
-        }else if (vel < 18){
+        }else if (vel < 18 || vel > 65){
             res.innerHTML +=('Voto facultativo')
         }else if(vel < 65){
             res.innerHTML +=(' Voto Obrigatório')
         }
-        else{
-            res.innerHTML +=('Voto facultativo')
-        }
+        
   
     }
     </script>
