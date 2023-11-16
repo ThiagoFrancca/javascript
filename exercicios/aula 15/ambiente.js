@@ -10,4 +10,4 @@ let posicao= num.indexOf(4)
 if(posicao == -1){
     console.log('O número não foi declarado')
 }else{
-console.log(`O valor 4 está na posição ${posicao}`)}
+console.log(`O valor 4 está na posição ${posicao}`)} 
