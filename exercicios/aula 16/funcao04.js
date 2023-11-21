@@ -10,4 +10,4 @@ function fatorar(n){
 
     return fat
 }
-console.log (fatorar(7))
+console.log (fatorar(5))
