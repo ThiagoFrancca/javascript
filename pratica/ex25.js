@@ -5,5 +5,5 @@ function regresiva(n){
 
     }
 }
-let res= regresiva(10)
+let res= regresiva(100)
 console.log(res)
