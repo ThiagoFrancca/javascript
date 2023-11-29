@@ -1,11 +1,17 @@
 function somaDosQuadrados(numero) {
-    let soma = 0;
-    for (let i = 1; i <= numero; i++) {
-      soma += i * i;
-    }
-    return soma;
+  // Inicializa uma variável para armazenar a soma dos quadrados
+  let soma = 0;
+
+  // Itera de 1 até o número fornecido
+  for (let i = 1; i <= numero; i++) {
+    // Para cada número, adiciona o quadrado ao total
+    soma += i * i;
   }
-  
-  // Exemplo de uso:
-  let resultado = somaDosQuadrados(3);
-  console.log(resultado);
+
+  // Retorna o resultado da soma dos quadrados
+  return soma;
+}
+
+// Exemplo de uso:
+let resultado = somaDosQuadrados(10);
+console.log(resultado);
